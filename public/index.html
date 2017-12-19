@@ -5,8 +5,13 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
   </head>
-  <body onLoad="initMap()">
+<body onLoad="initMap()">  
+
     <div id="floating-panel">
+<input id="key" type="textbox" value="enter your key and click Key">
+<input id="submitkey" type="button" value="Key">
+	</br>
+	</br>
       <input id="address" type="textbox" value="Sydney, NSW">
       <input id="submit" type="button" value="Coordinates">
 	</br>
@@ -16,14 +21,9 @@
 	</br>
 	<p id="display" type="text" value="" style="width:275px"></p>
     </div>
-    
-    
- <script  
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcP1rzlNRaAyz4e8vCv1XFS8MiGKjzzpc">
-    </script>
+<script  
+    src="https://maps.googleapis.com/maps/api/js?key=<YOUR_KEY_GOES_HERE>">
+    </script>  
     
   <script type="text/javascript" src="controllers/clickController.js"></script>
-	
-  
   </body>
-</html>

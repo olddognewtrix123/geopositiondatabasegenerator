@@ -4,6 +4,10 @@
 
 
 function initMap() {
+	
+	var mykey = document.getElementById("key").innerHTML;
+	
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcP1rzlNRaAyz4e8vCv1XFS8MiGKjzzpc">
 
         var geocoder = new google.maps.Geocoder();
 
