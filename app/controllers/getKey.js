@@ -6,3 +6,7 @@
    }
    
 
+document.getElementById('getthekey').addEventListener('click', function() {
+        console.log("got key")	
+	    getKey();
+        });
