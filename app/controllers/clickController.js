@@ -5,26 +5,36 @@
 
 function initMap() {
 	
+	
 	console.log(" monkeeees");
 
         var geocoder = new google.maps.Geocoder();
+        
 
         document.getElementById('submit').addEventListener('click', function() {
         	
+        
+        
+       
+        
 	    geocodeAddress(geocoder);
         });
 	
       }
+      
+      // test user input:  7301 Buttercup Rd,Sykesville Maryland;7555 Waterloo Rd,Jessup Maryland;30420 Revells Neck Rd,Westover Maryland
+	
+var addresses = [];
 
-	var addresses = [
-"7301 Buttercup Rd,Sykesville Maryland",
-"7555 Waterloo Rd,Jessup Maryland",
-"2020 Toulson Road,Jessup Maryland",
-"30420 Revells Neck Rd,Westover Maryland",
-"30420 Revells Neck Rd,Westover Maryland",
-"700 Flat Iron Square Rd,Church Hill Maryland",
-];
-	var addressesL = addresses.length; 
+//	var addresses = [
+//"7301 Buttercup Rd,Sykesville Maryland",
+//"7555 Waterloo Rd,Jessup Maryland",
+//"2020 Toulson Road,Jessup Maryland",
+//"30420 Revells Neck Rd,Westover Maryland",
+//"30420 Revells Neck Rd,Westover Maryland",
+//"700 Flat Iron Square Rd,Church Hill Maryland",
+//];
+//	var addressesL = addresses.length; 
 
 	var coordinates = [];
 	
@@ -33,6 +43,13 @@ function initMap() {
 			var display = "";
 
 	function geocodeAddress(geocoder) {
+		
+		var inputString = 	document.getElementById('address').value;
+        addresses = [];
+        addresses = inputString.split(';')
+        var addressesL = addresses.length; 
+		
+		 console.log("addresses length is " + addresses.length);
 
 		setTimeout(function () {    //  call a 3s setTimeout when the loop is called\
 			var currentaddress = addresses[i];
