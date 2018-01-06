@@ -59,7 +59,10 @@ var addresses = [];
 	  	 		var targetStr = target.toString() 
 	  	 		var targetStrT = targetStr.replace(/[()]/g,"");
 				console.log(targetStrT);
-				display = display + ";" + targetStrT;
+
+				display = display + targetStrT + ";" ;
+	//			display = display + ";" + targetStrT;
+
 				document.getElementById('display').innerHTML = display;
 	 	  		coordinates.push(targetStrT)
          	 		} else {

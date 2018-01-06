@@ -7,34 +7,29 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
   </head>
-<body onLoad="initMap()">  
+<body onLoad="initMap()" style="background: blue; color: white; text-align: center">  
 
     <div id="floating-panel">
 
 	</br>
+	<h4>Enter you semicolon-delimited list of addresses</h4><h4> and click the Get Coordinates button:</h4>
+	</br>
+
       <input id="address" type="textbox" value="Sydney, NSW">
-      <input id="submit" type="button" value="Coordinates">
+      	</br>
+      	</br>
+      	</br>
+      <input id="submit" type="button" value="Get Coordinates">
 	</br>
 	</br>
 	</br>
-	<label for="coordinates">coordinates:</label>
+	<label for="coordinates">Your coordinates:</label>
 	</br>
-	<p id="display" type="text" value="" style="width:275px"></p>
+	    <div style="width: 50%; margin: 0 auto">
+	    <p id="display" type="text" value="" style="width:275px"></p>
+	    </div>
     </div>
     
-  <!--  
-<script  
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcP1rzlNRaAyz4e8vCv1XFS8MiGKjzzpc">
-    </script>  
-    
-  --> 
-  
-  <!--
-    <script  
-    src="controllers/getKey.js" type="text/javascript">
-    </script> 
-    
-    -->
           
   <script> var arc = 'controllers/getKey.js' </script>
   
